@@ -1,114 +1,135 @@
 <!DOCTYPE html>
-<html lang="en"><!-- ALWAYS: specify site language - useful for browsers and search engines -->
-  <head>
-    <!-- MAYBE: specify encoding - not actually needed in 99% of cases as the
-  content-type header has a higher priority, plus most browsers default to utf-8 anyways.
-  Only useful in some cases where the server doesn't set the encoding and the browser is old. -->
-    <meta charset="utf-8">
+<html lang="vi">
+<head>
+  <meta charset="UTF-8">
+  <title>Nguyễn Duy Tùng – Web Developer Portfolio</title>
+  <link rel="stylesheet" href="style.css">
+</head>
+<body>
+  <div class="container">
+    <div class="header">
+      <img 
+        src="images/profile.jpg"
+        alt="Profile picture of Nguyễn Văn A"
+        class="profile-img"
+      <h1>Nguyễn Duy Tùng</h1>
+      <strong>Aspiring Web Developer</strong>
+      <p>
+        Mục tiêu của tôi trong khóa học này là xây dựng nền tảng vững chắc về HTML, CSS và JavaScript
+        để trở thành lập trình viên web chuyên nghiệp.
+      </p>
+    </div>
 
-    <!-- ALWAYS: Always specify page title. You want to be able to find the right tab 
-  in the browser -->
-    <title>Hello world!</title>
+    <!-- About Me -->
+    <div class="section">
+      <h2>About Me</h2>
 
-    <!-- MAYBE: Only useful if the resoures this page uses are on a common route 
-  different from the hostname. -->
-    <base href="/">
+      <p>
+        Tôi là sinh viên đam mê <strong>lập trình web</strong> và thiết kế giao diện người dùng.
+      </p>
 
-    <!-- ALWAYS: In the current age, your page is going to be accessed by smartphones.
-  If you don't specify viewport along with sensible responsive styles for your page,
-  it's going to be terrible to use in mobile devices -->
-    <meta name="viewport"
-      content="viewport-fit=cover, width=device-width, initial-scale=1.0, minimum-scale=1.0, maximum-scale=5.0">
-    
-    <!-- ALWAYS: Meta tags are useful for search engines and browsers -->
-    <meta name="description" content="">
-    <meta name="keywords" content="">
-    <meta name="author" content="">
+      <p>
+        Tôi thích <em>khám phá công nghệ mới</em>, đọc blog lập trình và thực hành qua các dự án cá nhân.
+      </p>
+    </div>
+    <div class="section">
+      <h2>Technical Skills</h2>
 
-    <!-- MAYBE: Only for applications, not regular sites, and if the application
-  name differs from the title of the page-->
-    <meta name="application-name" content="">
+      <ul class="skills-list">
+        <li>HTML</li>
+        <li>CSS</li>
+        <li>JavaScript</li>
+        <li>Bootstrap</li>
+        <li>Docker</li>
+        <li>AWS EC2</li>
+      </ul>
+    </div>
+    <div class="section">
+      <h2>Featured Projects</h2>
 
-    <!-- MAYBE: If you want to customize the color used by the user agent while
-  showing your page, i.e: the navigation bar in some mobile browsers -->
-    <meta name="theme-color" content="#33d">
+      <div class="project">
+        <h3>Personal Portfolio Website</h3>
+        <p><strong>Description:</strong> Website giới thiệu bản thân và kỹ năng lập trình.</p>
+        <p><strong>Technologies:</strong> HTML, CSS</p>
+        <ul>
+          <li>Thiết kế responsive</li>
+          <li>Giao diện đơn giản</li>
+          <li>Dễ mở rộng</li>
+        </ul>
+        <p>
+          <a href="#" class="project-link">GitHub</a> |
+          <a href="#" class="project-link">Live Demo</a>
+        </p>
+      </div>
 
-    <!-- MAYBE: If you want to support light/dark mode it's nice to warn browsers
-  of support and preference. "light dark" means light is preferred, but both light
-  and dark are supported. -->
-    <meta name="color-scheme" content="light dark">
+      <div class="project">
+        <h3>Recipe Finder App</h3>
+        <p><strong>Description:</strong> Ứng dụng tìm công thức nấu ăn theo nguyên liệu.</p>
+        <p><strong>Technologies:</strong> HTML, CSS, JavaScript, Flask</p>
+        <ul>
+          <li>Tìm kiếm công thức</li>
+          <li>Lưu món yêu thích</li>
+          <li>Responsive design</li>
+        </ul>
+        <p>
+          <a href="#" class="project-link">GitHub</a> |
+          <a href="#" class="project-link">Live Demo</a>
+        </p>
+      </div>
+    </div>
+    <div class="section">
+      <h2>Work Experience</h2>
+      <div class="experience-item">
+        <h3>Intern – Innovative Tech Solutions</h3>
+        <span>March 2021 – August 2021</span>
+        <ul>
+          <li>Hỗ trợ phát triển giao diện web</li>
+          <li>Chỉnh sửa HTML và CSS</li>
+          <li>Làm việc nhóm theo Agile</li>
+        </ul>
+      </div>
+    </div>
+    <div class="section">
+      <h2>Future Goals</h2>
+      <p>
+        Tôi mong muốn trở thành <strong>Full-Stack Developer</strong> trong 2 năm tới.
+      </p>
+      <ul>
+        <li>Thành thạo JavaScript</li>
+        <li>Học React & Node.js</li>
+        <li>Tham gia dự án thực tế</li>
+      </ul>
+    </div>
 
-    <!-- MAYBE: If you want content sharing sites like Facebook or X to show a nice
-  card with useful information about your site. -->
-    <meta property="og:title" content="" />
-    <meta property="og:type" content="website" />
-    <meta property="og:url" content="" />
-    <meta property="og:image" content="" />
+    <div class="section">
+      <h2>Certifications</h2>
+      <ul>
+        <li>📜 AWS Certified Cloud Practitioner</li>
+        <li>💻 HTML & CSS Certification</li>
+        <li>🚀 JavaScript Fundamentals</li>
+      </ul>
+    </div>
+    <div class="section">
+      <h2>Contact Information</h2>
 
-    <!-- ALWAYS: Helps search engines avoid duplication if the same page is accessible
-  via two different urls, i.e: potato.com/ and potato.com/index.html. Specify current
-  page url you want to show. -->
-    <link rel="canonical" href="" />
+      <p><strong>Email:</strong> example@email.com</p>
 
-    <!-- MAYBE: If you want the site to be an app-like PWA, create a nice manifest.json
-  file and link it. -->
-    <link rel="manifest" href="manifest.json">
-    <!-- If you don't specify a manifest, at least specify a nice icon for the page: -->
-    <link rel="icon" href="/favicon.ico" type="image/x-icon">
+      <p>
+        <strong>LinkedIn:</strong>
+        <a href="https://www.linkedin.com/in/yourprofile" target="_blank">
+          linkedin.com/in/yourprofile
+        </a>
+      </p>
+      
+      <p>
+        <strong>GitHub:</strong>
+        <a href="https://github.com/yourusername" target="_blank">
+          github.com/yourusername
+        </a>
+      </p>
+    </div>
 
-    <!-- MAYBE: If you provide a RSS feed, make it easier for RSS readers to find it -->
-    <link rel="alternate" type="application/rss+xml" href="/feed.xml">
-    
-    <!-- ALWAYS: Load fonts, styles, images or other critical resources as soon as
-  passible.. The onload attribute is a nice hack to avoid defining the same resource
-  twice in the HTML. -->
-    <link rel="preload" href="https://fonts.googleapis.com/css2?family=Roboto:ital,wght@0,100;0,300;0,400;0,500;0,700;0,900;1,100;1,300;1,400;1,500;1,700;1,900&display=swap" as="style" onload="this.onload=null;this.rel='stylesheet'">
+  </div>
 
-    <!-- MAYBE: If you will use external resources later, you can preconnect to the
-  external servers early to make the loading faster -->
-    <link rel="preconnect" href="https://fonts.gstatic.com">
-
-    <!-- MAYBE: Prerender common next pages from the current one for really fast
-  navigation -->
-    <link rel="prefetch" href="/next-page.html">
-
-    <!-- MAYBE: Strongly consider inlining critial styles for above-the-fold content
-  to avoid a FOUC, specially for homepages that are unlikely to have cached content.
-  This avoids any external requests for initial content that block rendering, and
-  loads other styles asynchronously. Avoid this approach if critical styles are too 
-  large. -->
-    <style>
-      body {
-        background: #fefefe;
-        color: #222;
-        font-family: 'Roboto', sans-serif;
-        padding: 1rem;
-        line-height: 1.8;
-      }
-    </style>
-    <link rel="preload" href="main.css" as="style" onload="this.onload=null;this.rel='stylesheet'">
-    <noscript><link rel="stylesheet" href="main.css"></noscript>
-    <!-- ALTERNATIVELY: Load the CSS from a css file and make it render blocking to avoid
-      content shifts. -->
-    <link href="main.css" rel="stylesheet" />
-
-    <!-- ALWAYS: It's a great practice to define a service worker as soon as possible
-  for offline capabilities -->
-    <script>
-      if ('serviceWorker' in navigator) {
-        window.addEventListener('load', () => {
-          navigator.serviceWorker.register('/service-worker.js');
-        });
-      }
-    </script>
-
-    <!-- ALWAYS: Load your scripts as modules for automatic deferring until DOM is
-  ready and nice modern ES functionality. Consider adding the "async" attribute if
-  the script doesn't depend on the DOM or any other scripts and you want it to run
-  as soon as possible without blocking rendering. -->
-    <script type="module" src="app.js"></script>
-  <body>
-    
-  </body>
+</body>
 </html>
-

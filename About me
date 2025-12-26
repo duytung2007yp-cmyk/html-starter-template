@@ -20,5 +20,13 @@
     Sở thích của tôi là <em>đọc sách công nghệ</em>, chơi thể thao và khám phá các framework mới.
   </p>
 </div>
+<ul class="skills-list">
+  <li>HTML</li>
+  <li>CSS</li>
+  <li>JavaScript</li>
+  <li>Docker</li>
+  <li>AWS EC2</li>
+  <li>Bootstrap</li>
+</ul>
 
 
